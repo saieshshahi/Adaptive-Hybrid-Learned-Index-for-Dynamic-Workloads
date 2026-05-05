@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import numpy, pandas, sklearn, matplotlib; print\\('all libs ok'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python experiments/run_static.py)",
+      "Bash(python experiments/run_drift.py)",
+      "Bash(python experiments/run_threshold_sweep.py)",
+      "Bash(python experiments/aggregate_summary.py)",
+      "Bash(pandoc --version)",
+      "Bash(python -c \"import docx; print\\('python-docx', docx.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c \"import docx; print\\('ok', docx.__version__\\)\")"
+    ]
+  }
+}
